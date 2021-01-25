@@ -1,0 +1,40 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.profile {
+   width: 28%;
+   box-sizing: border-box;
+   float: left;
+}
+
+.posts {
+   width: 72%;
+   box-sizing: border-box;
+   float: left;
+}
+
+@media (max-width: 650px) {
+   .profile, .posts {
+      width: 100%;
+      max-width: 100%;
+   }
+   .navbar {
+      width: 50%;
+      float: left;
+   }
+   .people {
+      height: 100px;
+      overflow: auto;
+   }
+}
+
+@media (max-width: 450px) {
+   .navbar {
+      width: 100%;
+   }
+   .people {
+      height: auto;
+   }
+}
